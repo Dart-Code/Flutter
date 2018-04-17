@@ -1,5 +1,5 @@
 {
-	"name": "flutter-code",
+	"name": "flutter",
 	"displayName": "Flutter",
 	"description": "Flutter support for Visual Studio Code.",
 	"version": "2.12.0",
@@ -14,7 +14,7 @@
 	"homepage": "https://dartcode.org/",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Dart-Code/Flutter-Code.git"
+		"url": "https://github.com/Dart-Code/Flutter.git"
 	},
 	"categories": [
 		"Extension Packs"
