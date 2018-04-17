@@ -1,0 +1,25 @@
+{
+	"name": "flutter-code",
+	"displayName": "Flutter",
+	"description": "Flutter support for Visual Studio Code.",
+	"version": "2.12.0",
+	"publisher": "Dart-Code",
+	"engines": {
+		"vscode": "^1.22.0"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"bugs": {
+		"url": "https://github.com/Dart-Code/Dart-Code/issues"
+	},
+	"homepage": "https://dartcode.org/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Dart-Code/Flutter-Code.git"
+	},
+	"categories": [
+		"Extension Packs"
+	],
+	"extensionDependencies": [
+		"Dart-Code.dart-code"
+	]
+}
