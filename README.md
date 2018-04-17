@@ -1,14 +1,17 @@
 ## Introduction
 
-This [VS Code](https://code.visualstudio.com/) extension adds support for the
-[Dart](https://www.dartlang.org/) programming language and provides tools for
+This [VS Code](https://code.visualstudio.com/) extension adds support for
 effectively editing, refactoring, running, and reloading [Flutter](https://flutter.io/)
-mobile apps.
+mobile apps, as well as support for the [Dart](https://www.dartlang.org/) programming
+language.
 
 ## Installation
 
 [Installed from the Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter) or by [searching within VS Code](https://code.visualstudio.com/docs/editor/extension-gallery#_search-for-an-extension).
 
+## Documentation
+
+Please see the [Flutter documentation for using VS Code](https://flutter.io/using-ide-vscode/).
 
 ## Features
 
