@@ -17,10 +17,19 @@
 		"url": "https://github.com/Dart-Code/Flutter.git"
 	},
 	"categories": [
-		"Extension Packs"
+		"Extension Packs",
+		"Debuggers",
+		"Languages",
+		"Linters",
+		"Snippets",
+		"Formatters"
 	],
 	"keywords": [
-		"flutter"
+		"flutter",
+		"dart",
+		"mobile",
+		"android",
+		"ios"
 	],
 	"icon": "media/icon.png",
 	"extensionDependencies": [
