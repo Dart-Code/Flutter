@@ -31,7 +31,7 @@
 		"android",
 		"ios"
 	],
-	"icon": "media/icon.png",
+	"icon": "media/flutter.png",
 	"extensionDependencies": [
 		"Dart-Code.dart-code"
 	]
