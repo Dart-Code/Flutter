@@ -1,7 +1,7 @@
 {
 	"name": "flutter",
 	"displayName": "Flutter",
-	"description": "Flutter support for Visual Studio Code.",
+	"description": "Flutter support and debugger for Visual Studio Code.",
 	"version": "2.12.2",
 	"publisher": "Dart-Code",
 	"engines": {
@@ -19,7 +19,7 @@
 	"categories": [
 		"Extension Packs",
 		"Debuggers",
-		"Languages",
+		"Programming Languages",
 		"Linters",
 		"Snippets",
 		"Formatters"
