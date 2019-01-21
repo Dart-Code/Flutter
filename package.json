@@ -17,11 +17,11 @@
 		"url": "https://github.com/Dart-Code/Flutter.git"
 	},
 	"categories": [
-		"Debuggers",
 		"Programming Languages",
-		"Linters",
 		"Snippets",
-		"Formatters"
+		"Linters",
+		"Formatters",
+		"Debuggers"
 	],
 	"keywords": [
 		"flutter",
