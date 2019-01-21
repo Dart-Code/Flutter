@@ -32,6 +32,7 @@
 	],
 	"icon": "media/flutter.png",
 	"activationEvents": [
+		"onCommand:flutter.createSampleProject",
 		"onUri"
 	],
 	"extensionDependencies": [
