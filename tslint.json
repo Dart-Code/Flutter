@@ -1,0 +1,28 @@
+{
+	"extends": [
+		"tslint:recommended"
+	],
+	"linterOptions": {
+		"exclude": [
+			"node_modules/**"
+		]
+	},
+	"rules": {
+		// Try to keep synced with Dart extension!
+		"indent": {
+			"options": "tabs"
+		},
+		"curly": false,
+		"no-console": false,
+		"max-classes-per-file": false,
+		"interface-name": false,
+		"member-ordering": false,
+		"no-empty": {
+			"options": "allow-empty-catch"
+		},
+		"space-before-function-paren": false,
+		"max-line-length": false,
+		"ordered-imports": false,
+		"no-shadowed-variable": false
+	}
+}

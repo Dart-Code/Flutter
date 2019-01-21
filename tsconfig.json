@@ -1,0 +1,21 @@
+{
+	// Try to keep synced with Dart extension!
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"outDir": "out",
+		"lib": [
+			"es6"
+		],
+		"sourceMap": true,
+		"rootDir": ".",
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"alwaysStrict": true,
+		"strictFunctionTypes": true,
+	},
+	"exclude": [
+		"node_modules",
+		".vscode-test"
+	]
+}
