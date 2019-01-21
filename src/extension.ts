@@ -3,8 +3,6 @@ import { SdkCommands } from "./commands/sdk";
 import { dartCodeExtensionIdentifier } from "./constants";
 
 export async function activate(context: vs.ExtensionContext): Promise<void> {
-	console.log("Flutter extension activated!");
-
 	// Ensure we have a Dart extension.
 	const dartExt = vs.extensions.getExtension(dartCodeExtensionIdentifier);
 	if (!dartExt) {
