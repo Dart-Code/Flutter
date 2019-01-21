@@ -31,9 +31,29 @@
 		"ios"
 	],
 	"icon": "media/flutter.png",
+	"activationEvents": [
+		"onUri"
+	],
 	"extensionDependencies": [
 		"Dart-Code.dart-code"
-	]
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "flutter.createSampleProject",
+				"title": "New Project From Docs",
+				"category": "Flutter"
+			}
+		]
+	},
+	"menus": {
+		"commandPalette": [
+			{
+				"command": "flutter.createSampleProject"
+			}
+		]
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "echo Compiling... && tsc -p ./",
