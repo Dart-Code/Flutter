@@ -34,6 +34,13 @@
 	"extensionDependencies": [
 		"Dart-Code.dart-code"
 	]
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "echo Compiling... && tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"lint": "tslint src/**/*.ts -t verbose"
+	},
 	"dependencies": {
 		"semver": "^5.6.0"
 	},

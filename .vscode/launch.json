@@ -9,6 +9,14 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceRoot}"
 			],
+			"outFiles": [
+				"${workspaceRoot}/out/src/**/*.js"
+			],
+			"preLaunchTask": "npm: watch",
+			"smartStep": true,
+			"skipFiles": [
+				"<node_internals>/**"
+			]
 		}
 	]
 }
