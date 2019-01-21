@@ -5,7 +5,7 @@ export class SdkCommands {
 	constructor(context: vs.ExtensionContext, private dartExtensionApi: any) {
 
 		context.subscriptions.push(vs.commands.registerCommand("flutter.createSampleProject",
-			(_) => this.runFunctionIfSupported(dartExtensionApi.createSampleProject)));
+			(_) => this.runFunctionIfSupported(dartExtensionApi.flutterCreateSampleProject)));
 	}
 
 	private async runFunctionIfSupported<T>(f: () => Promise<T>): Promise<T> {
