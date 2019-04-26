@@ -1,0 +1,16 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"files.exclude": {
+		"out": true,
+		"**/node_modules": true,
+		".vscode-test": true
+	},
+	"files.insertFinalNewline": true,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": true
+	},
+}
