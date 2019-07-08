@@ -5,8 +5,9 @@
 	"version": "3.2.0",
 	"publisher": "Dart-Code",
 	"engines": {
-		"vscode": "^1.33.0"
+		"vscode": "^1.36.0"
 	},
+	"extensionKind": "workspace",
 	"license": "SEE LICENSE IN LICENSE",
 	"bugs": {
 		"url": "https://github.com/Dart-Code/Dart-Code/issues"
@@ -63,7 +64,7 @@
 	},
 	"devDependencies": {
 		"@types/node": "^10.14.8",
-		"@types/vscode": "^1.33.0",
+		"@types/vscode": "^1.36.0",
 		"tslint": "^5.16.0",
 		"typescript": "^3.5.1"
 	}
