@@ -44,7 +44,7 @@
 		"commands": [
 			{
 				"command": "flutter.createSampleProject",
-				"title": "New Project From Docs",
+				"title": "Open Widget Sample",
 				"category": "Flutter"
 			}
 		]
