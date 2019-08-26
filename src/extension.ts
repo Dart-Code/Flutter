@@ -12,6 +12,11 @@ export async function activate(context: vs.ExtensionContext): Promise<void> {
 	}
 	await dartExt.activate();
 
+	if (!dartExt.exports) {
+		console.error("The Dart extension did not provide an exported API. Maybe it failed to activate?");
+		return;
+	}
+
 	// Register SDK commands.
 	const sdkCommands = new SdkCommands(context, dartExt.exports);
 }
