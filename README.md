@@ -14,3 +14,7 @@ language.
 ## Documentation
 
 Please see the [Flutter documentation for using VS Code](https://flutter.io/using-ide-vscode/).
+
+## Reporting Issues
+
+Issues should be reported in the [Dart-Code issue tracker](https://github.com/Dart-Code/Dart-Code/issues).
