@@ -33,7 +33,6 @@
 	],
 	"icon": "media/flutter.png",
 	"activationEvents": [
-		"onCommand:flutter.createSampleProject",
 		"onUri"
 	],
 	"extensionDependencies": [
@@ -42,18 +41,10 @@
 	"main": "./out/src/extension",
 	"contributes": {
 		"commands": [
-			{
-				"command": "flutter.createSampleProject",
-				"title": "Open Widget Sample",
-				"category": "Flutter"
-			}
 		]
 	},
 	"menus": {
 		"commandPalette": [
-			{
-				"command": "flutter.createSampleProject"
-			}
 		]
 	},
 	"scripts": {
