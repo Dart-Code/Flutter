@@ -7,7 +7,9 @@
 	"engines": {
 		"vscode": "^1.40.0"
 	},
-	"extensionKind": ["workspace"],
+	"extensionKind": [
+		"workspace"
+	],
 	"license": "SEE LICENSE IN LICENSE",
 	"bugs": {
 		"url": "https://github.com/Dart-Code/Dart-Code/issues"
@@ -40,12 +42,10 @@
 	],
 	"main": "./out/src/extension",
 	"contributes": {
-		"commands": [
-		]
+		"commands": []
 	},
 	"menus": {
-		"commandPalette": [
-		]
+		"commandPalette": []
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
