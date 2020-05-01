@@ -2,10 +2,10 @@
 	"name": "flutter",
 	"displayName": "Flutter",
 	"description": "Flutter support and debugger for Visual Studio Code.",
-	"version": "3.9.1",
+	"version": "3.10.0",
 	"publisher": "Dart-Code",
 	"engines": {
-		"vscode": "^1.43.0"
+		"vscode": "^1.44.0"
 	},
 	"extensionKind": [
 		"workspace"
@@ -54,9 +54,9 @@
 		"lint": "tslint src/**/*.ts -t verbose"
 	},
 	"devDependencies": {
-		"@types/node": "^12.12.14",
-		"@types/vscode": "^1.43.0",
+		"@types/node": "^12.12.37",
+		"@types/vscode": "^1.44.0",
 		"tslint": "^5.20.1",
-		"typescript": "^3.7.3"
+		"typescript": "^3.8.3"
 	}
 }
