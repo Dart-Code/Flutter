@@ -2,7 +2,7 @@
 	"name": "flutter",
 	"displayName": "Flutter",
 	"description": "Flutter support and debugger for Visual Studio Code.",
-	"version": "3.29.0",
+	"version": "3.32.0",
 	"publisher": "Dart-Code",
 	"engines": {
 		"vscode": "^1.63.0"
