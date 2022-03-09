@@ -1,1 +1,1 @@
-For release notes see [dartcode.org/releases](https://dartcode.org/releases/).
+For release notes see [dartcode.org/releases](https://dartcode.org/releases/latest/).
