@@ -8,7 +8,7 @@ export class SdkCommands {
 		// 	(_) => this.runFunctionIfSupported(dartExtensionApi.flutterCreateSampleProject)));
 	}
 
-	private async runFunctionIfSupported<T>(f: () => Promise<T>): Promise<T> {
+	private async runFunctionIfSupported<T>(f: () => Promise<T>): Promise<T | undefined> {
 		if (!f) {
 			this.showApiMismatchError();
 			return undefined;
