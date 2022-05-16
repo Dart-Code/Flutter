@@ -5,7 +5,7 @@
 	"version": "3.40.0",
 	"publisher": "Dart-Code",
 	"engines": {
-		"vscode": "^1.64.0"
+		"vscode": "^1.67.0"
 	},
 	"extensionKind": [
 		"workspace"
