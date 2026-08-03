@@ -1,18 +1,29 @@
 {
 	// Try to keep synced with Dart extension!
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "es6",
-		"outDir": "out",
+		"module": "Node16",
+		"moduleResolution": "Node16",
+		"target": "ES2022",
+		"outDir": "out/src",
 		"lib": [
-			"es6"
+			"ES2022"
 		],
 		"sourceMap": true,
-		"rootDir": ".",
+		"rootDir": "src",
 		"strict": true,
+		"skipLibCheck": true,
+		"types": [
+			"node"
+		]
 	},
 	"exclude": [
+		".crash_dumps",
+		".dart_code_test_data_dir",
+		".dcud",
+		".dart_code_test_logs",
+		".vscode-test",
 		"node_modules",
-		".vscode-test"
+		"out",
+		"src/test/test_projects"
 	]
 }

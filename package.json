@@ -5,7 +5,7 @@
 	"version": "3.140.0",
 	"publisher": "Dart-Code",
 	"engines": {
-		"vscode": "^1.75.0"
+		"vscode": "^1.101.0"
 	},
 	"extensionKind": [
 		"workspace"
@@ -60,16 +60,15 @@
 		"vscode:prepublish": "npm run compile",
 		"compile": "echo Compiling... && tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"lint": "eslint -c .eslintrc.js --ext .ts ."
+		"lint": "eslint",
+		"lint:fix": "eslint --fix"
 	},
 	"devDependencies": {
-		"@types/node": "^16.11.34",
-		"@types/vscode": "^1.75.0",
-		"@typescript-eslint/eslint-plugin-tslint": "^5.23.0",
-		"@typescript-eslint/eslint-plugin": "^5.23.0",
-		"@typescript-eslint/parser": "^5.23.0",
-		"eslint": "^8.15.0",
-		"tslint": "^6.1.3",
-		"typescript": "^4.6.3"
+		"@eslint/js": "^10.0.0",
+		"@types/node": "^24.0.0",
+		"@types/vscode": "~1.101.0",
+		"eslint": "^10.2.1",
+		"typescript-eslint": "^8.58.2",
+		"typescript": "^6.0.3"
 	}
 }

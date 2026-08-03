@@ -18,5 +18,5 @@ export async function activate(context: vs.ExtensionContext): Promise<void> {
 	}
 
 	// Register SDK commands.
-	const sdkCommands = new SdkCommands(context, dartExt.exports);
+	new SdkCommands(context, dartExt.exports);
 }
