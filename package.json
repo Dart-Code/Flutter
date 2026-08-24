@@ -49,7 +49,7 @@
 	"extensionDependencies": [
 		"Dart-Code.dart-code"
 	],
-	"main": "./out/src/extension",
+	"main": "./out/dist/extension",
 	"contributes": {
 		"commands": []
 	},

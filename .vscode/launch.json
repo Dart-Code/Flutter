@@ -10,7 +10,7 @@
 				"--extensionDevelopmentPath=${workspaceRoot}"
 			],
 			"outFiles": [
-				"${workspaceRoot}/out/src/**/*.js"
+				"${workspaceRoot}/out/dist/**/*.js"
 			],
 			"preLaunchTask": "npm: watch",
 			"smartStep": true,

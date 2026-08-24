@@ -4,7 +4,7 @@
 		"module": "Node16",
 		"moduleResolution": "Node16",
 		"target": "ES2022",
-		"outDir": "out/src",
+		"outDir": "out/dist",
 		"lib": [
 			"ES2022"
 		],
