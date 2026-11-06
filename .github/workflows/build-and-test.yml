@@ -1,0 +1,107 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - 'patch-*'
+    tags:
+      - '**'
+  pull_request:
+  # Run on merge queue groups.
+  merge_group:
+    types: [ checks_requested ]
+  schedule:
+     - cron: '0 6 * * 1' # 6am Monday
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    name: Build and Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+
+    steps:
+
+      - uses: actions/checkout@v7
+
+      - name: Set up Node v22
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: npm install
+        run: npm install
+
+      - name: npm lint
+        run: npm run lint
+
+      - name: npm compile
+        run: npm run compile
+
+  link_check:
+    name: Check Links (Lychee)
+    if: github.event_name != 'merge_group'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Run Lychee Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >
+            --root-dir ./
+            --exclude-all-private
+            --exclude '\$\%7B[^}]+\%7D'
+            --exclude "^file://"
+            ./src/**/*.ts
+            ./*.md
+            package.json
+
+  # A single action based on the build outcome that can be used
+  # as a required status check. link_check is intentionally excluded
+  # so external website link failures do not block PR merges.
+  merge-guard:
+    permissions:
+      contents: none
+    name: Merge Guard
+    needs: build
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Fail if the build check did not pass.
+      - name: Check results
+        if: needs.build.result != 'success'
+        run: |
+          echo "::error title=Merge Guard::Build and Lint did not succeed (${{ needs.build.result }})."
+          exit 1
+
+  notify_failure:
+
+    permissions:
+      contents: none
+    name: Notify Discord of Failure
+    needs: build
+    if: failure() && (github.event_name == 'push' || github.event_name == 'merge_group' || github.event_name == 'schedule') && (github.event_name == 'schedule' || github.ref == format('refs/heads/{0}', github.event.repository.default_branch) || github.event.merge_group.base_ref == format('refs/heads/{0}', github.event.repository.default_branch)) && github.repository_owner == 'Dart-Code'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+
+      - name: Send notification to Discord
+        run: 'if ($env:DISCORD_WEBHOOK) { Invoke-WebRequest -Headers @{ "Content-Type" = "application/json" } -Method Post -Body "{`"content`":`"Build failed on $($env:GITHUB_REF.Replace(`"refs/heads/`", `"`")): https://github.com/$($env:GITHUB_REPOSITORY)/commit/$($env:GITHUB_SHA)/checks`"}" -Uri $env:DISCORD_WEBHOOK }'
+        shell: pwsh
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
