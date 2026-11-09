@@ -5,9 +5,9 @@ run-name: Release ${{ inputs.release_type }}${{ inputs.version && format(' v{0}'
 # and Open VSX Registry, tags the commit, and (for stable releases) creates a
 # GitHub Release with the VSIX.
 #
-# Documentation (keep in sync when modifying this workflow):
-# - docs/releasing.md: Step-by-step instructions for performing a release.
-# - docs/release-process.md: Technical details on how this release workflow works.
+# Documentation (in Dart-Code/Dart-Code, keep in sync when modifying this workflow):
+# - https://github.com/Dart-Code/Dart-Code/blob/master/docs/releasing.md: Step-by-step instructions for performing a release.
+# - https://github.com/Dart-Code/Dart-Code/blob/master/docs/release-process.md: Technical details on how this release workflow works.
 #
 # Note: When publishing a '.0' stable release (e.g. 3.148.0), the workflow opens a PR
 # to bump package.json to the next '-dev' version (e.g. 3.150.0-dev). To publish the
