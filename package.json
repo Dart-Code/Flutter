@@ -53,9 +53,6 @@
 	"contributes": {
 		"commands": []
 	},
-	"menus": {
-		"commandPalette": []
-	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "echo Compiling... && tsc -p ./",
