@@ -53,22 +53,22 @@
 	"contributes": {
 		"commands": [
 			{
+				"//": "Implemented in the Dart-Code extension.",
 				"command": "flutter.createProject",
 				"title": "Create New Project",
-				"category": "Flutter",
-				"//": "Implemented in the Dart-Code extension."
+				"category": "Flutter"
 			},
 			{
+				"//": "Implemented in the Dart-Code extension.",
 				"command": "flutter.doctor",
 				"title": "Run Flutter Doctor",
-				"category": "Flutter",
-				"//": "Implemented in the Dart-Code extension."
+				"category": "Flutter"
 			},
 			{
+				"//": "Implemented in the Dart-Code extension.",
 				"command": "flutter.upgrade",
 				"title": "Run Flutter Upgrade",
-				"category": "Flutter",
-				"//": "Implemented in the Dart-Code extension."
+				"category": "Flutter"
 			}
 		]
 	},
