@@ -51,7 +51,23 @@
 	],
 	"main": "./out/dist/extension",
 	"contributes": {
-		"commands": []
+		"commands": [
+			{
+				"command": "flutter.createProject",
+				"title": "Create New Project",
+				"category": "Flutter"
+			},
+			{
+				"command": "flutter.doctor",
+				"title": "Run Flutter Doctor",
+				"category": "Flutter"
+			},
+			{
+				"command": "flutter.upgrade",
+				"title": "Run Flutter Upgrade",
+				"category": "Flutter"
+			}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
