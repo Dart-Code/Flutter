@@ -55,17 +55,20 @@
 			{
 				"command": "flutter.createProject",
 				"title": "Create New Project",
-				"category": "Flutter"
+				"category": "Flutter",
+				"//": "Implemented in the Dart-Code extension."
 			},
 			{
 				"command": "flutter.doctor",
 				"title": "Run Flutter Doctor",
-				"category": "Flutter"
+				"category": "Flutter",
+				"//": "Implemented in the Dart-Code extension."
 			},
 			{
 				"command": "flutter.upgrade",
 				"title": "Run Flutter Upgrade",
-				"category": "Flutter"
+				"category": "Flutter",
+				"//": "Implemented in the Dart-Code extension."
 			}
 		]
 	},
